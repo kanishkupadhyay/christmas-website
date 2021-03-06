@@ -1,0 +1,813 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #666666;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.80857;
+    
+}
+.slider {
+  margin-top: -223px;
+}
+.main{
+  margin-top: 20px;
+}
+.main h1{
+  color: red;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+background-color: #fff;
+position: fixed;
+width: 100%;
+z-index: 3;
+}
+.head-div{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px -9px 28px black;
+}
+.nav-section a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 8px 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.nav-section a:hover{
+  color: #fff;
+  background-color: red;
+ border-radius: 20px;
+}
+/*****************************************************/
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 44rem;
+  }
+  .prev{
+      left: 0;
+  }
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100%;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: red;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: red;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .slider{
+      height: 90vh;
+  }
+  #myBtn {
+    
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #e91327; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 60px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+.nav-section{
+  margin: 36px 0px;
+}
+  .fa-bars:before {
+ display: none;     
+}
+ 
+/* Best Wishes */
+
+.best{
+  display: flex;
+  justify-content: center;
+  height: 15rem;
+}
+.best h1{
+  font-family: 'Great Vibes', cursive;
+  color: #e91327;
+  font-weight: 400;
+  font-size: 75px;
+}
+.center{
+  display: flex;
+  margin:0px 100px 0px 100px;
+  justify-content: center;
+}
+.dil img{
+  display: inline;
+}
+.dil h3{
+  display: inline;
+  color: #e91327;
+  font-size: 45px;
+  font-weight: 600;
+ 
+}
+.dil div{
+  margin-top: -98px;
+    margin-left: 95px;
+}
+.dil span{
+  display: block;
+  margin: 0px 100px 0px 100px;
+}
+
+  /* sec-main */
+  .sec-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 53px;
+    background-color: #f7f7f7;
+  }
+  .w2{
+    width: 100%;
+    height: 71%;
+  }
+  .satyam h1{
+   
+  color: #e91327;
+  font-size: 45px;
+  font-weight: 600;
+  }
+  .centering{
+    width: 40%;
+  }
+  
+  /* ----------------------------------------------- */
+
+  /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#mySidenav{
+  z-index: 5;
+  background-color: #e91327;
+}
+#mySidenav a{
+  color: #fff;
+}
+/* best deals */
+.deals{
+  display: flex;
+  justify-content: center;
+}
+.deals h1{
+  font-family: 'Great Vibes', cursive;
+  color: #e91327;
+  font-weight: 400;
+  font-size: 75px;
+}
+.bestdeals{
+display: flex;
+justify-content: space-evenly;
+}
+.d1{
+  height: 316px;
+  width: 32%;
+  border:  8px solid rgb(238, 232, 232);
+  cursor: pointer;
+}
+.d1:hover{
+  border: 8px solid red;
+  opacity: 0.6;
+}
+.d2:hover{
+  border: 8px solid red;
+  opacity: 0.6;
+}
+.d1 img{
+  height: 300px;
+  width: 100%;
+}
+.d2{
+  height: 316px;
+  cursor: pointer;
+  width: 32%;
+  border:  8px solid rgb(238, 232, 232);
+ 
+}
+.d2 img{
+  height: 300px;
+  width: 100%;
+}
+
+.total{
+  margin-top: 50px;
+}
+
+/* Donate */
+
+.donate{
+  display: flex;
+  justify-content: center;
+}
+.donate h1{
+  font-size: 75px;
+  font-family: 'Great Vibes', cursive;
+  color: #e91327;
+  font-weight: 400;
+}
+.donate-img {
+  display: flex;
+  justify-content: center;
+}
+.donate-img img{
+  border: 8px solid #e2e2e2;
+  width: 23%;
+  height: 186px;
+  cursor: pointer;
+  margin: 0px 30px;
+}
+.sec{
+  margin-top: 30px;
+}
+.donate-img img:hover{
+  border: 8px solid #e91327;
+}
+.don{
+  background-color: rgba(228, 222, 222, 0.534);
+  padding-top: 50px;
+  margin-top: 30px;
+  padding-bottom: 90px;
+}
+/* Testimonial */
+.testimonial{
+  display: flex;
+  justify-content: center;
+}
+.testimonial h1{
+  color: #e91327;
+  font-size: 75px;
+  font-weight: 400;
+  font-family: 'Great Vibes', cursive;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+.profile{
+  display: flex;
+  justify-content: center;
+
+}
+.profile img{
+  height: 200px;
+  border-radius: 140px;
+}
+#john{
+  color: red;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.dumm{
+  
+  display: flex;
+  justify-content: center;
+}
+.dumm p{
+  width: 50%;
+  font-weight: bold;
+  font-size: 16px;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.contact h1{
+  color: #e91327;
+  font-weight: 400;
+  font-size: 75px;
+  font-family:'Great Vibes', cursive;
+}
+.inp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inp input{
+  width: 40%;
+  padding: 20px 0px;
+  margin: 10px 0px;
+  background-color: #333;
+  font-size: 14px;
+  color: #fff;
+  
+}
+.inp textarea{
+  width: 40%;
+  padding: 20px 0px;
+  margin: 10px 0px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #333;
+}
+.send-btn{
+  display: flex;
+  justify-content: center;
+}
+.send-btn button{
+  background-color: #e91327;
+ 
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    box-shadow: 3px 5px 5px black;
+    outline: none;
+}
+.send-btn button:hover{
+  color: #e91327;
+  background-color: #fff;
+  box-shadow: 3px 5px 5px #e91327;
+}
+.subs{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+  background-color: #e91327;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-top: 60px;
+}
+.subs h1{
+  color: #fff;
+  
+  font-weight: 400;
+  font-size: 75px;
+  font-family: 'Great Vibes', cursive;
+}
+.subs input{
+  padding: 12px 0px;
+  padding-right: 47px;
+  border-radius: 0px;
+  border: none;
+  width: 35%;
+  font-size: 20px;
+}
+.subs button{
+  background-color: #222;
+  color: #fff;
+  padding: 11px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color:#cecece;
+}
+footer span{
+  color: #222;
+  font-size: 25px;
+}
+ /***************Media queries****************/
+ @media(max-width:928px){
+  .head-div{
+      justify-content: center;
+  }
+  .nav-section a{
+      padding: 8px 9px;
+  }
+}
+
+@media(max-width:836px){
+
+.nav-section a{
+    font-size: 12px;
+}
+}
+@media(max-width:788px){
+
+.fa-bars:before{
+    display: block;
+}
+.head-div{
+    justify-content: space-around;
+    height: 70px;
+}
+.main {
+  margin-top: 10px;
+}
+i{
+  margin-top: -100px;
+}
+.nav-section a{
+    display: none;
+}
+}
+@media(max-width:500px){
+.head-div div img{
+    height: 4rem;
+    margin: 25px 0px;
+}
+header{
+    padding: 0;
+}
+.slider{
+    height: 95vh;
+}
+.fa-bars:before{
+    font-size: 30px;
+    margin: 5px 0px;
+}
+.main h1{
+  font-size: 25px;
+}
+i{
+  margin-top: -100px;
+}
+.main{
+  margin-top: 18px;
+}
+}
+@media(max-width:478px){
+  .donate-img{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .donate-img img{
+    width: 51%;
+  }
+}
+@media(max-width:478px){
+  .donate h1{
+    font-size: 65px;
+  }
+  .deals h1{
+    font-size: 65px;
+  }
+  .testimonial h1{
+    font-size: 50px;
+  }
+  .contact h1{
+    font-size: 50px;
+  }
+  .subs h1{
+    font-size: 65px;
+  }
+  footer span{
+    font-size: 20px;
+  }
+}
+@media(max-width:1260px){
+  .center{
+    margin: 0px 50px 0px 50px;
+  }
+  }
+  @media(max-width:1160px){
+    .center{
+      margin: 0px 0px 0px 0px;
+    }
+    .dil h3{
+      font-size: 38px;
+    }
+    .dil span{
+      margin: 0px;
+    }
+    }
+    @media(max-width:992px){
+      .center{
+        flex-direction: column;
+        align-items: center;
+      }
+      .best{
+        height: 9rem;
+      }
+      .dil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .dil div{
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+      .dil img{
+        display: none;
+      }
+    
+    }
+    @media(max-width:596px){
+      .dil h3{
+        font-size: 34px;
+      }
+      .santa{
+        display: flex;
+        justify-content: center;
+      }
+      .subs input{
+        width: 60%;
+      }
+     .inp textarea{
+        width: 60%;
+      }
+      .inp input{
+        width: 60%;
+      }
+      .dumm p{
+        width: 75%;
+      }
+    }
+    @media(max-width:528px){
+      .santa img{
+        width: 70%;
+      }
+      .dil h3{
+        font-size: 30px;
+      }
+    }
+    @media(max-width:468px){
+      .dil h3{
+        font-size: 26px;
+      }
+      .best h1{
+        font-size: 70px;
+      }
+    }
+    @media(max-width:412px){
+      .dil h3{
+        font-size: 22px;
+      }
+      .best h1{
+        font-size: 55px;
+      }
+      .subs input{
+        width: 75%;
+      }
+      .inp input{
+        width: 75%;
+      }
+      .inp textarea{
+        width: 75%;
+      }
+    }
+    @media(max-width:340px){
+      .dil h3{
+        font-size: 18px;
+      }
+      .best h1{
+        font-size: 50px;
+      }
+    }
+    @media(max-width:1066px){
+      .centering{
+        width: 43%;
+      }
+    }
+    @media(max-width:995px){
+     .sec-main{
+       flex-direction: column;
+       align-items: center;
+     }
+     .centering{
+       width: 100%;
+     }
+     .satyam{
+       display: flex;
+       justify-content: center;
+     }
+    }
+    @media(max-width:702px){
+      .satyam h1{
+        font-size: 38px;
+      }
+    }
+    @media(max-width:595px){
+      .satyam h1{
+        font-size: 34px;
+      }
+    }
+    @media(max-width:528px){
+      .satyam h1{
+        font-size: 30px;
+      }
+      .img2{
+        display: flex;
+        justify-content: center;
+      }
+      .w2{
+        width: 70%;
+      }
+    }
+    @media(max-width:471px){
+      .satyam h1{
+        font-size: 26px;
+      }
+    }
+    @media(max-width:412px){
+      .satyam h1{
+        font-size: 22px;
+      }
+    }
+    @media(max-width:340px){
+      .satyam h1{
+        font-size: 18px;
+      }
+    }
+    @media(max-width:995px){
+      .bestdeals{
+        flex-direction: column;
+        align-items: center;
+      }
+      .d1{
+        margin: 30px;
+        width: 50%;
+      }
+      .d2{
+        margin: 30px;
+        width: 50%;
+      }
+    }

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <title>Marry Christmas</title>
+</head>
+
+<body>
+  <header #navbar>
+    <div class="head-div">
+      <div class="main">
+        <h1>Kanishk Upadhyay</h1>
+      </div>
+      <div class="nav-section">
+        <a href="#home">Home</a>
+        <a href="#wish">Wish</a>
+        <a href="#best">Best Deal</a>
+        <a href="#donate">Donate</a>
+        <a href="#testimonial">Testimonial</a>
+        <a href="#contact">Contact</a>
+        <i onclick="openNav()" class="fa fa-bars" style="font-size:48px;color:red"></i>
+      </div>
+    </div>
+  </header>
+  <!-- Slideshow container -->
+  <div id="home" class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img class="slider" src="images/slider-01.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="slider" src="images/d2.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div  class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img class="slider" src="images/slider2.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a  class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br id="wish">
+  <div>
+    <!-- The dots/circles -->
+    <div   style="text-align:center; position: absolute;width: 100%;top: 110%;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+  <!--Scroll to top-->
+  <button  onclick="topFunction()" id="myBtn" title="Go to top"><a href="">
+      <i style="color: #fff;" class="fa fa-angle-up"></i>
+    </a></button>
+
+  <!-- Best wishes -->
+
+  <div>
+    <div class="best">
+      <h1 >Best Wishes</h1>
+    </div>
+    <div class="center">
+      <div class="santa">
+        <img src="images/w1.png" alt="" srcset="">
+      </div>
+      <div class="dil">
+        <img src="images/head_s.png" alt="" srcset="">
+        <div>
+          <h3>Kanishk upadhyay Wishes you</h3>
+        </div>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate adipisci numquam reprehenderit
+          expedita. Fuga ullam accusantium, neque voluptas, recusandae velit voluptate itaque dolore quod officiis
+          laboriosam libero molestias unde cum. Mollitia quas pariatur dolore. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Minima illo explicabo consequatur tempora libero! Repellendus quam illo asperiores
+          laboriosam ipsa quia rerum delectus at obcaecati, placeat corrupti aspernatur rem pariatur.</span>
+      </div>
+    </div>
+  </div>
+  <!-- second main -->
+
+  <div class="sec-main">
+    <div class="centering">
+      <div class="satyam">
+        <h1>Satyam Upadhyay Wishes you</h1>
+      </div>
+      <div class="dummy">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente minima at accusantium laboriosam
+          dolore rem itaque blanditiis odio nesciunt ab odit nemo ea, consequatur vel animi molestiae magnam cum ipsum
+          iure. Suscipit sit voluptas recusandae tempora qui eaque fugit sapiente illo rerum possimus beatae, dolorum
+          distinctio, ratione vel blanditiis delectus excepturi asperiores mollitia, ipsa explicabo consequuntur
+          tempore. Voluptas assumenda pariatur quis doloremque magni, ducimus molestias asperiores nemo?</span>
+      </div>
+    </div>
+    <div class="img2">
+      <img class="w2" src="images/w2.png" alt="" srcset="">
+    </div>
+  </div>
+  <!-- side nav push -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home">Home</a>
+    <a href="#wish">Wish</a>
+    <a href="#best">Best Deal</a>
+    <a href="#donate">Donate</a>
+    <a href="#testimonial">Testimonial</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    ...
+  </div>
+  <!-- best deal -->
+  <div id="best" class="deals">
+    <h1>Best Deals</h1>
+  </div>
+  <div class="total">
+
+    <div class="bestdeals">
+      <div class="d1">
+        <img src="images/d1.png" alt="" srcset="">
+      </div>
+      <div class="d2">
+        <img src="images/d2.png" alt="" srcset="">
+      </div>
+    </div>
+    <div id="secondbest" class="bestdeals">
+      <div class="d1">
+        <img src="images/d3.png" alt="" srcset="">
+      </div>
+      <div class="d2">
+        <img src="images/d4.png" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+
+  <div class="don">
+    <div class="donate">
+      <h1 id="donate">Donate</h1>
+    </div>
+    <div class="donate-img">
+      <img src="./images/d1.png" alt="Error loading image" srcset="">
+      <img src="./images/d2.png" alt="Error loading image" srcset="">
+      <img src="./images/d3.png" alt="Error loading image" srcset="">
+    </div>
+    <div class="donate-img sec">
+      <img src="./images/d4.png" alt="Error loading image" srcset="">
+      <img src="./images/d1.png" alt="Error loading image" srcset="">
+      <img src="./images/d2.png" alt="Error loading image" srcset="">
+    </div>
+    <div class="donate-img sec">
+      <img src="./images/d3.png" alt="Error loading image" srcset="">
+      <img src="./images/d4.png" alt="Error loading image" srcset="">
+      <img src="./images/d1.png" alt="Error loading image" srcset="">
+    </div>
+  </div>
+  <div class="testimonial">
+    <h1 id="testimonial">Testimonial</h1>
+  </div>
+  <div class="profile">
+    <img src="./images/profile-1.jpg" alt="" srcset="">
+  </div>
+  <span id="john">John Doe</span>
+  <div class="dumm">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias facilis molestias fugiat impedit atque dolor
+      repellendus magnam eaque, laudantium veritatis dicta deserunt pariatur reiciendis animi amet sit. In laudantium
+      atque numquam optio suscipit inventore </p>
+  </div>
+
+  <div class="contact">
+    <h1 id="contact">Contact us</h1>
+  </div>
+  <div class="inp">
+    <input type="text" placeholder="Enter your name" id="">
+    <input type="text" placeholder="Enter your email" id="">
+    <input type="number" placeholder="Enter your number" id="">
+    <textarea placeholder="Your message"></textarea>
+  </div>
+  <div class="send-btn">
+    <button>Send message</button>
+  </div>
+  <div class="subs">
+    <h1>Subscribe</h1>
+    <input type="text" placeholder="Enter Your Email">
+    <button>Subscribe</button>
+  </div>
+  <footer>
+    <span>Created by Kanishk Upadhyay :)</span>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
